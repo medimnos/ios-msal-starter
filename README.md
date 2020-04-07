@@ -1,0 +1,1 @@
+# Microsoft Authentication Library (MSAL) for iOS Starter App
