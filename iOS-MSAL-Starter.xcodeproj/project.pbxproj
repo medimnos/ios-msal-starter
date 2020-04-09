@@ -18,6 +18,10 @@
 		61689F0A243D1D86006A391A /* GraphService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61689F09243D1D86006A391A /* GraphService.swift */; };
 		61689F0D243D1DCB006A391A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61689F0C243D1DCB006A391A /* Resource.swift */; };
 		61689F12243D22F2006A391A /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61689F11243D22F2006A391A /* Authentication.swift */; };
+		61689F15243E6B3F006A391A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61689F14243E6B3F006A391A /* AuthViewController.swift */; };
+		61689F17243E6B48006A391A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61689F16243E6B48006A391A /* ListViewController.swift */; };
+		61689F1C243E6B63006A391A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61689F1B243E6B63006A391A /* ProfileViewController.swift */; };
+		61689F20243E71C2006A391A /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61689F1F243E71C2006A391A /* Globals.swift */; };
 		F7FC0FD88434B23EC589B31A /* Pods_iOS_MSAL_Starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B60BB2863220FB405A21056 /* Pods_iOS_MSAL_Starter.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,11 @@
 		61689F09243D1D86006A391A /* GraphService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphService.swift; sourceTree = "<group>"; };
 		61689F0C243D1DCB006A391A /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		61689F11243D22F2006A391A /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		61689F14243E6B3F006A391A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		61689F16243E6B48006A391A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		61689F1B243E6B63006A391A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		61689F1F243E71C2006A391A /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		61CDAD99243FB63900CCE4DB /* iOS-MSAL-Starter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-MSAL-Starter.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,7 @@
 		61689EED243D1960006A391A /* iOS-MSAL-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				61CDAD99243FB63900CCE4DB /* iOS-MSAL-Starter.entitlements */,
 				61689F0B243D1D90006A391A /* Utils */,
 				61689F06243D1D67006A391A /* Service */,
 				61689F03243D1D2E006A391A /* Lib */,
@@ -90,6 +100,7 @@
 		61689F02243D1D19006A391A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				61689F13243E6B2E006A391A /* Auth */,
 				61689F10243D1DEC006A391A /* List */,
 				61689F0F243D1DE8006A391A /* Profile */,
 				61689F0E243D1DDE006A391A /* Main */,
@@ -119,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				61689F0C243D1DCB006A391A /* Resource.swift */,
+				61689F1F243E71C2006A391A /* Globals.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -134,6 +146,7 @@
 		61689F0F243D1DE8006A391A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				61689F1B243E6B63006A391A /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -141,8 +154,17 @@
 		61689F10243D1DEC006A391A /* List */ = {
 			isa = PBXGroup;
 			children = (
+				61689F16243E6B48006A391A /* ListViewController.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		61689F13243E6B2E006A391A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				61689F14243E6B3F006A391A /* AuthViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		7D5706FCB5452FEBE4F6DCB3 /* Frameworks */ = {
@@ -282,8 +304,12 @@
 				61689F0A243D1D86006A391A /* GraphService.swift in Sources */,
 				61689EF1243D1960006A391A /* SceneDelegate.swift in Sources */,
 				61689F05243D1D3B006A391A /* Connection.swift in Sources */,
+				61689F20243E71C2006A391A /* Globals.swift in Sources */,
+				61689F1C243E6B63006A391A /* ProfileViewController.swift in Sources */,
 				61689F08243D1D7D006A391A /* SharePointService.swift in Sources */,
 				61689F0D243D1DCB006A391A /* Resource.swift in Sources */,
+				61689F15243E6B3F006A391A /* AuthViewController.swift in Sources */,
+				61689F17243E6B48006A391A /* ListViewController.swift in Sources */,
 				61689F12243D22F2006A391A /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +455,7 @@
 			baseConfigurationReference = 090358469CD6BF99C3357067 /* Pods-iOS-MSAL-Starter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-MSAL-Starter/iOS-MSAL-Starter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V77EJXUH63;
 				INFOPLIST_FILE = "iOS-MSAL-Starter/Info.plist";
@@ -448,6 +475,7 @@
 			baseConfigurationReference = 5EC5419AAA330B9CC2E1E01F /* Pods-iOS-MSAL-Starter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-MSAL-Starter/iOS-MSAL-Starter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V77EJXUH63;
 				INFOPLIST_FILE = "iOS-MSAL-Starter/Info.plist";
